@@ -1,5 +1,15 @@
 .App {
+  background-image: url("https://images.squarespace-cdn.com/content/v1/554530dae4b0f235dbcc1021/1459716223292-GSCHMHUB49RM5PEIOG3F/ke17ZwdGBToddI8pDm48kHD3I8MUR1US8LyQHF2IqGxZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZamWLI2zvYWH8K3-s_4yszcp2ryTI0HqTOaaUohrI8PI1nZeKnEOhOo1PPUyBovQ_qh5mWH-VJSpyVfrw_9LhIUKMshLAGzx4R3EDFOm1kBS/Walker_Art_Ctr_bg2012cinema0709_008_LG.jpg?format=1500w");
   text-align: center;
+  background-repeat: no-repeat;
+ 
+ background-size: cover;
+
+}
+
+.dfl{
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .App-logo {
@@ -27,7 +37,10 @@
 .App-link {
   color: #61dafb;
 }
-
+.dfl{
+  display: flex;
+  flex-wrap: wrap;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
