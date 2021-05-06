@@ -6,11 +6,19 @@
 .star{
     width: 30px;
 }
-.mr-auto{ margin :80px;
-padding :10px}
-.Navbar.Brand {
-    width: 50px;
+ .links li{
+    color:rgb(245, 241, 241);
 }
+.Navbar.Brand {
+    width: 80px;
+}
+.basic-navbar-nav{padding-top: -150px;}
 .azaz{
-   height:100px;
-    background-image: url("https://cms-assets.tutsplus.com/uploads/users/2469/posts/35585/image/movies%20fpp%20bg.jpg");}
+   height:70px;
+    background-image: url("https://ak.picdn.net/shutterstock/videos/3467858/thumb/1.jpg");}
+    .text-footer{background-color: #21081a;}
+    .Brand{size: 16px;
+        color :red;
+    }
+    .crd{display: flex;
+    flex-wrap: wrap;}

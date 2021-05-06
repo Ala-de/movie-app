@@ -19,6 +19,7 @@ function Film () {
   return(
     
       film.map(el=>
+      <div className="crd">
       <div className='cwart'>
         <Card style={{ width: '18rem' }}>
   <Card.Img variant="top" src={el.Images} />
@@ -35,6 +36,7 @@ function Film () {
   </Card.Body>
 </Card>
      </div> 
+     </div>
       )
   
    )

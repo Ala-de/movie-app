@@ -1,5 +1,6 @@
 import React from 'react'
-import {Navbar,NavDropdown,Nav,Form,FormControl,Button } from 'react-bootstrap';
+import {Navbar,NavDropdown,Nav,Form,FormControl } from 'react-bootstrap';
+import {Link} from 'react-router-dom'
  import './film.css'
 export default function Navgation() {
     return (
@@ -8,16 +9,18 @@ export default function Navgation() {
   <Navbar.Brand href="#home">MOVIES</Navbar.Brand>
   <Navbar.Toggle aria-controls="basic-navbar-nav" />
   <Navbar.Collapse id="basic-navbar-nav">
-    <Nav className="mr-auto">
-      <Nav.Link href="#home">Acceuil</Nav.Link>
-      <Nav.Link href="#link">Apropos</Nav.Link>
-      <Nav.Link href="#home">Films</Nav.Link>
-      <Nav.Link href="#link">Contact</Nav.Link>
+    <Nav className="links">
+    <Link to="/">Home</Link>
+      
+      <Link to="/"><li>Films</li></Link>
+
+        <Link to="/favorie">Favorie</Link>
+        
         
     </Nav>
-    <Form inline>
+    <Form inline className="limine ml-auto">
       <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-      <Button variant="outline-success">Search</Button>
+  
     </Form>
   </Navbar.Collapse>
 </Navbar>
