@@ -15,11 +15,10 @@ function App() {
     <div className="App">
       <BrowserRouter>
       
-      <Navgation/>
 <Route   exact path="/"  component={Home}   />
 
 <Route  path="/favorie" component={Favorie}  />
-<Route path ="/a propos" component={Apropos }/>
+<Route path ="/a propos" component={Apropos}/>
       <Footer/>
      
       </BrowserRouter>

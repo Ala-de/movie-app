@@ -3,7 +3,7 @@ import React, {useState,useEffect}from 'react'
 import {Card,Button } from 'react-bootstrap'
 import './film.css'
 
-function Film () {
+function Film ({input}) {
   const [film, setfilm ]= useState([])
   const getfilm = ()=>{
     
@@ -18,7 +18,14 @@ function Film () {
   console.log(film)
   return(
     
-      film.map(el=>
+      film.filter((al)=>{
+        if(input===""){
+          return al
+        }
+        else if (al.Title.toLowerCase().includes(input.toLowerCase())){
+          return al
+        }
+      }).map(el=>
       <div className="crd">
       <div className='cwart'>
         <Card style={{ width: '18rem' }}>
