@@ -1,34 +1,41 @@
-import logo from './logo.svg';
+
 import './App.css';
 import Navgation from'./navgation'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Film from './films'
-import {Container} from 'react-bootstrap'
 import Footer from'./footer'
 import Apropos  from './apropo'
 import Favorie from './favorie'
 import { BrowserRouter, Route } from 'react-router-dom';
 import Home from './home'
+import Contact from './contact'
+import Admin from './Admin'
+import {useState} from "react"
+import Film from './films';
 
 function App() {
+  const [favorie,setFavorie]=useState([])
+  const getFavorie=(el)=>{
+    favorie.push(el);
+    console.log (favorie);
+
+  };
+
   return (
     <div className="App">
       <BrowserRouter>
+      <Navgation/>
+          <Route   exact path="/"  component={Home}  />
+          <Route  path="/favorie" component={Favorie} favorie={favorie}  />
+          <Route path ="/a propos" component={Apropos}/>
+          <Route path ="/Contact" component={Contact}/>
+          <Route  path="/Admin"component={Admin}/>  
+          <Route   path="/films"  component={Film} getFavorie={getFavorie}/>
+         <Footer/>
       
-<Route   exact path="/"  component={Home}   />
-
-<Route  path="/favorie" component={Favorie}  />
-<Route path ="/a propos" component={Apropos}/>
-      <Footer/>
-     
+      
       </BrowserRouter>
-      {/* <Navgation/>
-      <div ClassName="dfl">
-   <Container className="d-flex flex-wrap">
-   <Film/>
-   </Container>
-   <Apropos/>
-   <Footer/> */}
+    
+     
         </div>
     
   );

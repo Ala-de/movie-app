@@ -1,5 +1,5 @@
 import React from 'react'
-
+import './film.css'
 export default function Footer() {
     return (
         <div>

@@ -2,8 +2,11 @@ import { getDefaultNormalizer } from '@testing-library/dom';
 import React, {useState,useEffect}from 'react'
 import {Card,Button } from 'react-bootstrap'
 import './film.css'
+import Rater from 'react-rater'
+import 'react-rater/lib/react-rater.css'
 
-function Film ({input}) {
+
+function Film ({input,getFavorie}) {
   const [film, setfilm ]= useState([])
   const getfilm = ()=>{
     
@@ -26,6 +29,8 @@ function Film ({input}) {
           return al
         }
       }).map(el=>
+        <div className= "navbarrr">
+          
       <div className="crd">
       <div className='cwart'>
         <Card style={{ width: '18rem' }}>
@@ -37,11 +42,15 @@ function Film ({input}) {
       {el.Plot}
     </Card.Text>
     <Card.Text>
-      {el.imdbRating}<img src="./star.png" className="star"/>
+      <Rater total={10} rating={el.imdbRating} />
     </Card.Text>
-    <Button variant="primary">watch</Button>
+    <Button variant="primary" className="bbb" >watch</Button>
+    <Button variant="primary" className="bbb" onClick={()=>{getFavorie(el)}}>favrie</Button>
+
   </Card.Body>
+  
 </Card>
+     </div>
      </div> 
      </div>
       )

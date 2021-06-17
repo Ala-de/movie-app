@@ -7,7 +7,10 @@
     width: 30px;
 }
  .links li{
-    color:rgb(245, 241, 241);
+    color:rgb(226, 213, 213);
+    margin: 20px;
+    display: flex;
+    align-content: center;
 }
 .Navbar.Brand {
     width: 80px;
@@ -15,15 +18,16 @@
 .basic-navbar-nav{padding-top: -150px;}
 .azaz{
    height:70px;
-    background-image: url("https://ak.picdn.net/shutterstock/videos/3467858/thumb/1.jpg");}
-    .text-footer{background-color: #21081a;}
+    background-color:#D9482B ;}
+    .text-footer{background-color:rosybrown;}
     .Brand{size: 16px;
-        color :red;
+        color :#D9482B;
     }
     .crd{display: flex;
     flex-wrap: wrap;}
      .navbar-brand {
-        color:red;
+    background-color:#D9482B ;
+  ;
     }
 
-
+.imgg{size: 5px;}

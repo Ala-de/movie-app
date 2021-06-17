@@ -11,7 +11,10 @@
   display: flex;
   flex-wrap: wrap;
 }
-
+/*bouotonn*/
+.buton{
+  margin:30px;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -48,4 +51,22 @@
   to {
     transform: rotate(360deg);
   }
+}
+.react-rater-star.is-active{
+  color: yellow !important;
+  font-size: 1.5rem !important;
+}
+.react-rater-star {
+  cursor: pointer;
+  color: rgb(131, 127, 26) !important;
+  font-size: 1.5rem !important;
+  position: relative;
+}
+  .react-rater-star.is-active-half:before {
+    color: rgb(168, 153, 20)!important;
+    content: '\2605';
+    position: absolute;
+    left: 0;
+    width: 50%;
+    overflow: hidden;
 }

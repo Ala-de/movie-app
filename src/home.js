@@ -8,15 +8,17 @@ import { Container } from "react-bootstrap";
      const  [input,setInput]=useState("")
      const handelchange=(e)=>{
          setInput(e.target.value)
+         
      }
 
     return (
         <div>
-                  <Navgation handelchange={handelchange}/>
+                  
 
              <Container className="d-flex flex-wrap">
-   <Film  input={input}/>
-   </Container>
+           <Film  input={input}/>
+           </Container>
+
         </div>
     )
 }

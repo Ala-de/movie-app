@@ -1,0 +1,16 @@
+.buton{
+    padding: 20px;
+  border: none;
+  font: inherit;
+  background-color: rosybrown;
+  cursor: pointer;
+  margin: 10px;
+}
+.buttonn{
+    padding: 20px;
+    border: none;
+    font: inherit;
+    background-color: rosybrown;
+    cursor: pointer;
+    margin: 10px;
+}
